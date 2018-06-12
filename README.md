@@ -19,7 +19,7 @@ from braindecode.datasets.bbci import  BBCIDataset
 cnt = BBCIDataset(filename='./test/1.mat', load_sensor_names=None).load()
 ```
 
-The `example.py` code in this repository shows how to reproduce the decoding results for our dataset.
+The `example.py` code in this repository shows how to reproduce the decoding results from the paper above.
 
 
 ## Data format
