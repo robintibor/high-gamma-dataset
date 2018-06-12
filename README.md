@@ -9,22 +9,24 @@ Download the files from here:
 https://www.dropbox.com/sh/vgxed0kx0b31aiv/AAAS2E7qXpn0vPjqjMLVW4ZOa?dl=0
  
 
-## Usage of this dataset
+## Loading this dataset
 
 The braindecode toolbox at https://github.com/robintibor/braindecode provides code to load this dataset in python.
-You can run the following code to get an MNE RawArray:
+You can run the following code to get an [MNE RawArray](https://mne-tools.github.io/stable/generated/mne.io.RawArray.html):
 
 ```python
 from braindecode.datasets.bbci import  BBCIDataset
 cnt = BBCIDataset(filename='./test/1.mat', load_sensor_names=None).load()
 ```
+For using the dataset for decoding, see the next section.
 
-The `example.py` code in this repository shows how to reproduce the decoding results from the paper above.
+## Reproduction of our results
+The `example.py` code in this repository shows how to reproduce the decoding results from the paper above and can also be used as an example code for decoding.
 
 
 ## Data format
 The data are hdf5-files, the structure is based on the structure from the Berlin Brain Computer Interface Toolbox at https://github.com/bbci/bbci_public.
-Most fields have been removed, only some necessary fields are retained. We recommend to just use our loading code as above.
+Most fields have been removed, only some necessary fields are retained. We recommend to use our loading code as described above.
 
 ## Details of recording
 
