@@ -1,6 +1,6 @@
 # High Gamma Dataset
 
-This is the documnentation for the High Gamma Dataset used in "Deep learning with convolutional neural networks for EEG decoding and visualization"
+This is the documentation for the High Gamma Dataset used in "Deep learning with convolutional neural networks for EEG decoding and visualization"
  (https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.23730).
 See the paper and supporting information for a general description.
 
