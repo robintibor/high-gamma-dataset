@@ -22,6 +22,8 @@ For using the dataset for decoding, see the next section.
 
 ## Reproduction of our results
 The `example.py` code in this repository shows how to reproduce the decoding results from the paper above and can also be used as an example code for decoding.
+Please change the `data_folder` in the code to the folder where you downloaded the dataset to, see the code at the bottom of the file.
+
 
 
 ## Data format
