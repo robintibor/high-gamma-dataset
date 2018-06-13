@@ -23,7 +23,18 @@ For using the dataset for decoding, see the next section.
 ## Reproduction of our results
 The `example.py` code in this repository shows how to reproduce the decoding results from the paper above and can also be used as an example code for decoding.
 Please change the `data_folder` in the code to the folder where you downloaded the dataset to, see the code at the bottom of the file.
+In difference to the paper, we do not use the tied neighbour loss, and we do not have biases before batch normalization layers.
+You can expect the following results for this code.
+They are averaged from 3 random seeds, average over all subjects.
+If you need further results, please create an issue.
+We show paper accuracies for comparison:
 
+|Model|Lowpass [Hz]|Test accuracy [%]|From paper [%]|
+|---|---|---|---|
+|Deep|0|92.3|92.5|
+|Deep|4|92.2|91.4|
+|Shallow|0|88.9|89.3|
+|Shallow|4|94.6|93.9|
 
 
 ## Data format
