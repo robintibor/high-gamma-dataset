@@ -206,7 +206,7 @@ if __name__ == '__main__':
     model_name = 'deep' # or shallow
     low_cut_hz = 0 # or 4
     np_th_seed = 0 # random seed for numpy and pytorch
-    debug = True
+    debug = False
     exp = run_exp_on_high_gamma_dataset(train_filename, test_filename,
                                   low_cut_hz, model_name,
                                   max_epochs, max_increase_epochs,
