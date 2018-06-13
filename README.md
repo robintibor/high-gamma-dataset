@@ -9,6 +9,7 @@ Download the files from here:
 https://www.dropbox.com/sh/vgxed0kx0b31aiv/AAAS2E7qXpn0vPjqjMLVW4ZOa?dl=0
  
 
+
 ## Loading this dataset
 
 The braindecode toolbox at https://github.com/robintibor/braindecode provides code to load this dataset in python.
@@ -19,6 +20,26 @@ from braindecode.datasets.bbci import  BBCIDataset
 cnt = BBCIDataset(filename='./test/1.mat', load_sensor_names=None).load()
 ```
 For using the dataset for decoding, see the next section.
+
+## Citing
+If you use this dataset in any publication, you agree to cite the above-mentioned HBM-paper as:
+
+```
+  @article {HBM:HBM23730,
+  author = {Schirrmeister, Robin Tibor and Springenberg, Jost Tobias and Fiederer,
+    Lukas Dominique Josef and Glasstetter, Martin and Eggensperger, Katharina and Tangermann, Michael and
+    Hutter, Frank and Burgard, Wolfram and Ball, Tonio},
+  title = {Deep learning with convolutional neural networks for EEG decoding and visualization},
+  journal = {Human Brain Mapping},
+  issn = {1097-0193},
+  url = {http://dx.doi.org/10.1002/hbm.23730},
+  doi = {10.1002/hbm.23730},
+  month = {aug},
+  year = {2017},
+  keywords = {electroencephalography, EEG analysis, machine learning, end-to-end learning, brain–machine interface, 
+    brain–computer interface, model interpretability, brain mapping},
+  }
+```
 
 ## Reproduction of our results
 The `example.py` code in this repository shows how to reproduce the decoding results from the paper above and can also be used as an example code for decoding.
@@ -46,23 +67,3 @@ Most fields have been removed, only some necessary fields are retained. We recom
 The recodings were referenced to Cz, however in our recording setup, some residual signal remains on Cz.
 Note that for subject 14, about half of the sensors lost meaningful signal in the test set.
 It is still possible to get far-above chance accuracies even when not accounting for this in any way when training on all sensors of the training set.
-
-## Citing
-If you use this dataset in a scientific publication, please cite the above-mentioned HBM-paper as:
-
-```
-  @article {HBM:HBM23730,
-  author = {Schirrmeister, Robin Tibor and Springenberg, Jost Tobias and Fiederer,
-    Lukas Dominique Josef and Glasstetter, Martin and Eggensperger, Katharina and Tangermann, Michael and
-    Hutter, Frank and Burgard, Wolfram and Ball, Tonio},
-  title = {Deep learning with convolutional neural networks for EEG decoding and visualization},
-  journal = {Human Brain Mapping},
-  issn = {1097-0193},
-  url = {http://dx.doi.org/10.1002/hbm.23730},
-  doi = {10.1002/hbm.23730},
-  month = {aug},
-  year = {2017},
-  keywords = {electroencephalography, EEG analysis, machine learning, end-to-end learning, brain–machine interface, 
-    brain–computer interface, model interpretability, brain mapping},
-  }
-```
