@@ -5,8 +5,8 @@ This is the documentation for the High Gamma Dataset used in "Deep learning with
 See the paper and supporting information for a general description.
 
 ## Download
-Download the files from here:
-https://www.dropbox.com/sh/vgxed0kx0b31aiv/AAAS2E7qXpn0vPjqjMLVW4ZOa?dl=0
+Download the files from this repositoy, subfolder data
+https://web.gin.g-node.org/robintibor/high-gamma-dataset/src/master/data
  
 
 
