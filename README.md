@@ -8,6 +8,10 @@ See the paper and supporting information for a general description.
 Download the files from here:
 https://web.gin.g-node.org/robintibor/high-gamma-dataset
 
+### Trained models
+Parameters for trained deep and shallow models from https://github.com/robintibor/braindecode for each subject are under 
+https://web.gin.g-node.org/robintibor/high-gamma-dataset/src/master/data/trained-parameters
+
 
 ## Loading this dataset
 
