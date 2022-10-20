@@ -5,8 +5,17 @@ This is the documentation for the High Gamma Dataset used in "Deep learning with
 See the paper and supporting information for a general description.
 
 ## Download
-Download the files from here:
-https://web.gin.g-node.org/robintibor/high-gamma-dataset
+In general, the easiest way to use this data is via [Braindecode](braindecode.org/) which has the [High-Gamma Dataset/HGD](https://braindecode.org/stable/generated/braindecode.datasets.HGD.html) included already.
+
+Otherwise you may use [GIN](https://gin.g-node.org/G-Node/Info/wiki) and access the GIN repository at https://web.gin.g-node.org/robintibor/high-gamma-dataset:
+```bash
+gin get robintibor/high-gamma-dataset
+cd high-gamma-dataset
+gin download --content
+```
+
+Finally, you can donwload individual files manually, e.g., go on https://gin.g-node.org/robintibor/high-gamma-dataset/src/master/data/train/1.edf then right click, Download-> Save Link As
+
 
 ### Trained models
 Parameters for trained deep and shallow models from https://github.com/robintibor/braindecode for each subject are under 
